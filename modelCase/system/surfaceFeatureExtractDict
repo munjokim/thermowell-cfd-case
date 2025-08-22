@@ -1,0 +1,40 @@
+
+pipe
+{
+    extractionMethod    extractFromSurface;
+    writeObj            yes;
+    surfaceFile         "pipe.stl";
+
+    regionBox
+    {
+        min ( -200 -200 -200 );
+        max (  200  200  800 );  // +Z 방향 확장
+    }
+}
+
+pressure
+{
+    extractionMethod    extractFromSurface;
+    writeObj            yes;
+    surfaceFile         "pressure.stl";
+
+    regionBox
+    {
+        min ( -200 -200 -200 );
+        max (  200  200  800 );
+    }
+}
+
+thermowell
+{
+    extractionMethod    extractFromSurface;
+    writeObj            yes;
+    surfaceFile         "thermowell.stl";
+
+    regionBox
+    {
+        min ( -200 -200 -200 );
+        max (  200  200  800 );
+    }
+}
+
